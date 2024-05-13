@@ -1,0 +1,15 @@
+Amazon VPC
+    pada dasarnya adalah jaringan pribadi Anda di AWS
+
+Subnet 
+    adalah sebuah bagian dari VPC di mana Anda dapat mengelompokkan sumber daya berdasarkan keamanan atau kebutuhan operasional. 
+
+Network ACL bersifat stateless
+    adalah firewall virtual yang mengontrol traffic masuk dan keluar di tingkat subnet
+
+Security group bersifat stateful
+    adalah firewall virtual yang mengontrol traffic masuk dan keluar untuk Amazon EC2 instance
+
+Amazon Route 53 
+    adalah layanan domain name system (DNS) atau sistem nama domain di AWS yang highly available (sangat tersedia) dan scalable (dapat diskalakan)
+

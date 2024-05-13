@@ -1,0 +1,50 @@
+AWS Identity and Access Management (AWS IAM) 
+    dapat membantu Anda untuk mengelola akses ke layanan dan sumber daya AWS dengan aman. fitur-fitur IAM, seperti:
+    IAM Users
+        mewakili orang (personal) yang berinteraksi dengan layanan dan sumber daya AWS.
+    IAM Policies
+        dokumen JSON yang mengizinkan atau menolak aktivitas tertentu terhadap layanan dan sumber daya AWS.
+    IAM Groups
+        grup/kelompok yang berisi kumpulan dari user. 
+    IAM Roles
+        untuk memberikan akses sementara ke beberapa hal, seperti sumber daya AWS, user, eksternal user, aplikasi, bahkan layanan AWS lainnya.
+
+AWS Organizations
+    ia adalah lokasi sentral yang dapat mengelola beberapa akun AWS
+    
+Compliance (Kepatuhan)
+    layanan yang dapat mengumpulkan dokumen, menyimpan catatan, dan memeriksa lingkungan AWS, dengan tujuan untuk memastikan regulasi compliance yang Anda jalankan telah terpenuhi dengan baik.
+
+Serangan Denial-of-Service
+
+Distributed denial-of-service alias DDoS 
+    adalah salah satu serangan yang dapat menimpa infrastruktur atau aplikasi Anda
+
+AWS Shield 
+    adalah layanan yang dapat melindungi aplikasi Anda dari serangan DDoS. Layanan ini memberikan dua tingkat perlindungan: Standard dan Advanced.
+    AWS Shield Standard 
+        secara otomatis melindungi sumber daya AWS Anda dari jenis serangan DDoS yang paling umum tanpa biaya.
+    AWS Shield Advanced 
+        adalah layanan berbayar yang menyediakan kemampuan untuk mendiagnostik, mendeteksi, dan memitigasi serangan DDoS yang canggih.
+
+
+Encryption at rest
+    proses enkripsi terjadi saat data Anda dalam keadaan tidak bergerak (tersimpan dan tidak berpindah)
+Encryption in-transit
+    Proses enkripsi in-transit terjadi saat data Anda berpindah antara A dan B
+
+AWS Key Management Service (AWS KMS)
+    adalah layanan yang memungkinkan Anda untuk melakukan enkripsi menggunakan cryptographic key (kunci kriptografi)
+Kunci kriptografi 
+    adalah rangkaian angka acak yang digunakan untuk mengunci (mengenkripsi) dan membuka kunci (mendekripsi) data.
+
+AWS Web Application Firewall (AWS WAF)
+    memantau request/permintaan jaringan yang masuk ke aplikasi web.
+
+Amazon Inspector
+    membantu Anda untuk melengkapi pemahaman kita untuk meningkatkan keamanan dan compliance/kepatuhan aplikasi dengan menjalankan penilaian keamanan secara otomatis terhadap infrastruktur Anda.
+
+Amazon GuardDuty
+    adalah layanan yang menyediakan deteksi ancaman cerdas untuk infrastruktur dan sumber daya AWS Anda.
+
+

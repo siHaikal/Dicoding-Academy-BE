@@ -1,0 +1,21 @@
+high availability (ketersediaan tinggi)
+    adalah kemampuan untuk memastikan bahwa sistem selalu bekerja dan dapat diakses dengan waktu henti yang minimal tanpa memerlukan intervensi manusia.
+
+fault tolerance
+    berarti sistem masih mampu beroperasi meskipun beberapa komponen mengalami kegagalan.
+
+Amazon CloudFront 
+    adalah layanan yang dapat membantu Anda untuk mengirimkan data, video, aplikasi, dan API ke pelanggan di seluruh dunia dengan latensi rendah dan kecepatan transfer yang tinggi
+
+Edge locations 
+    adalah lokasi yang digunakan Amazon CloudFront untuk menyimpan salinan cache dengan jarak yang dekat dengan pelanggan sehingga konten dapat terkirim lebih cepat.
+
+Region 
+    adalah wilayah yang terisolasi secara geografis di mana Anda dapat mengakses layanan yang diperlukan untuk 
+    menjalankan segala macam kebutuhan
+
+AWS CloudFormation 
+    adalah layanan infrastructure as code (infrastruktur sebagai kode) yang memungkinkan Anda untuk menentukan berbagai sumber daya AWS dengan cara deklaratif menggunakan dokumen berbasis teks JSON atau YAML yang disebut sebagai CloudFormation template.
+
+CDN
+    adalah jaringan yang membantu Anda untuk memberikan konten kepada pelanggan berdasarkan lokasi geografis mereka.

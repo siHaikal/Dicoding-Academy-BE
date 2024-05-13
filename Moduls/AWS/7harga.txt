@@ -1,0 +1,16 @@
+#Konsep Harga AWS
+    Pay for what you use (Bayar sesuai yang Anda gunakan)
+    Pay less when you reserve (Berhemat saat Anda memesan di awal)
+    Pay less with volume-based discounts when you use more (Bayar lebih murah dengan diskon berbasis volume saat Anda menggunakan lebih sering)
+
+Consolidated billing adalah 
+    fitur yang memungkinkan Anda untuk mendapatkan satu tagihan untuk semua akun AWS yang ada di organisasi.
+
+AWS Budgets 
+    dapat membantu Anda untuk menetapkan anggaran pada berbagai skenario, seperti biaya atau penggunaan layanan.
+
+AWS Cost Explorer. 
+    Ia adalah layanan berbasis konsol yang dapat meninjau dan menganalisis secara visual pengeluaran Anda di AWS.
+
+AWS Marketplace. 
+    Ia adalah katalog digital pilihan yang memiliki ribuan perangkat lunak dari berbagai vendor. Layanan ini dapat menyederhanakan langkah Anda guna menemukan, melakukan pengujian, dan membeli software pihak ketiga yang berjalan di arsitektur AWS.

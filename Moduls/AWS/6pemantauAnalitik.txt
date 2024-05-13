@@ -1,0 +1,9 @@
+#Amazon CloudWatch
+    Ia dapat memantau infrastruktur dan aplikasi yang Anda jalankan di AWS secara real time. Layanan ini bekerja dengan cara melacak dan memantau metrik. Metrik adalah variabel yang terikat dengan sumber daya Anda, seperti penggunaan CPU dari EC2 instance.
+
+#AWS CloudTrail
+    Ia adalah layanan audit API yang komprehensif. Dengan CloudTrail, Anda dapat melihat riwayat lengkap dari aktivitas pengguna dan panggilan API untuk aplikasi maupun sumber daya Anda.
+
+#AWS Trusted Advisor
+    Ia adalah layanan web yang memeriksa lingkungan AWS Anda dan memberikan rekomendasi secara real time sesuai dengan praktik terbaik AWS.
+

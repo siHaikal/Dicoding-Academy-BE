@@ -1,0 +1,36 @@
+Instance store (tempat penyimpanan instance) 
+    adalah penyimpanan block-level storage sementara untuk Amazon EC2 instance
+
+Amazon Elastic Block Store (Amazon EBS) 
+    adalah layanan yang menyediakan block-level storage (penyimpanan tingkat blok) yang dapat Anda gunakan bersama dengan Amazon EC2 instance.
+
+Amazon Simple Storage Service (Amazon S3)
+    layanan penyimpanan yang sederhana.
+
+Amazon Elastic File System (Amazon EFS)
+    sistem file terkelola yang bisa diskalakan dan dapat digunakan oleh layanan AWS Cloud dan sumber daya di data center on-premise. file storage alias penyimpanan file, yang berarti beberapa client--pengguna, aplikasi, server, dsb--dapat mengakses data yang disimpan di folder file secara bersamaan.
+
+Amazon Relational Database Service (Amazon RDS)
+    Artinya, data yang kita simpan dapat memiliki relasi dengan bagian data lainnya.
+    Ia adalah layanan yang memungkinkan Anda untuk menjalankan database relasional di AWS Cloud.
+
+Amazon DynamoDB
+    adalah layanan penyimpanan data NoSQL yang bersifat key-value.
+    Amazon DynamoDB ini adalah layanan yang terkelola sepenuhnya dan merupakan database serverless (tanpa server)
+
+Amazon Redshift
+    Amazon Redshift adalah layanan data warehousing yang dapat Anda gunakan untuk analitik big data.
+
+AWS Database Migration Service
+
+Layanan Database Tambahan
+    Amazon DocumentDB.
+        Ia adalah layanan yang dapat membantu Anda untuk menangani manajemen konten, katalog, ataupun profil pengguna.
+    Amazon Neptune
+        Ia adalah layanan graph database (database grafik) yang berguna untuk membuat dan menjalankan aplikasi dengan kumpulan data yang sangat terhubung, seperti social networking (jejaring sosial), recommendation engines (mesin pemberi rekomendasi), fraud detection (sistem pendeteksi penipuan), dan knowledge graph (grafik pengetahuan: kumpulan deskripsi yang saling terkait dari entitas).
+    Amazon Managed Blockchain
+        ia adalah sistem ledger (kumpulan catatan riwayat aktivitas) terdistribusi yang memungkinkan banyak pihak menjalankan transaksi dan berbagi data tanpa otoritas pusat.
+    Amazon Quantum Ledger Database (Amazon QLDB)
+        Amazon QLDB adalah sistem pencatatan yang immutable di mana entri apa pun tidak akan pernah bisa dihapus dari audit
+        
+    

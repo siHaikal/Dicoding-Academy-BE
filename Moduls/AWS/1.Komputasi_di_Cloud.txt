@@ -1,0 +1,49 @@
+#instance yaitu permintaan komputasi cloud sesuai yang dibutuhkan atau dipakai
+#vertical scalling adalah penambahan banyak memory dan CPU
+
+#Tipe-tipe instance
+1. General purpose instance (instance tujuan utama)
+    => gunanya untuk memberikan keseimbangan sumber daya komputasi, memori, dan jaringan.
+2. computer optimized instance (instance teroptimasi untuk komputasi)
+    => tugas komputasi yang intensif dan berpusat pada prosesor dengan performa tinggi, seperti server game, HPC (high-performance computing/komputasi dengan performa tinggi), atau bahkan pemodelan ilmiah.
+3. Memory optimized instances (Instance teroptimasi untuk memori)
+    => memberikan performa tinggi untuk beban kerja yang memproses kumpulan data besar di dalam memori, seperti relasional dan nonrelasional database atau HPC (high-performance computing).
+4. Accelerated computing instances (Instance terakselerasi untuk komputasi)
+    => menggunakan perangkat keras akselerator untuk menjalankan beberapa fungsi secara lebih efisien dibandingkan dengan perangkat lunak yang berjalan pada CPU. Contohnya adalah penghitungan bilangan floating-point, pemrosesan grafik, dan data pattern matching (pencocokan pola data).
+5. Storage optimized instance (Instance teroptimasi untuk penyimpanan)
+    => Opsi ini didesain untuk beban kerja yang membutuhkan akses read (baca) dan write (tulis) yang tinggi dan berurutan untuk kumpulan data yang besar di penyimpanan lokal. Contoh beban kerja yang sesuai untuk tipe ini mencakup sistem file terdistribusi, aplikasi data warehousing (gudang data), dan sistem online transaction processing (OLTP) berfrekuensi tinggi.
+
+
+#input/output operation per second (IOPS) 
+    => metrik yang mengukur kinerja perangkat penyimpanan. Ini menunjukkan berapa banyak operasi input atau output yang dapat dilakukan oleh perangkat dalam satu detik.
+
+# load balancing (menyeimbangkan beban)
+    => proses mendistribusikan beban kerja merata di seluruh EC2 instance sehingga tak ada satu instance pun yang menganggur
+# load balancer (penyeimbang beban)
+    =>  aplikasi yang dapat menerima permintaan lalu mengarahkannya ke instance untuk diproses
+
+# Elastic Load Balancing (ELB)
+    => yaitu layanan AWS yang secara otomatis mendistribusikan traffic aplikasi yang masuk ke berbagai sumber daya, seperti Amazon EC2 instance.
+#dua layanan AWS yang dapat membantu Anda dalam meraih arsitektur yang loosely coupled: Amazon Simple Queue Service (Amazon SQS) dan Amazon Simple Notification Service (Amazon SNS).
+
+#Amazon Simple Queue Service (Amazon SQS)
+    => Amazon SQS queue adalah tempat di mana pesan ditaruh sampai diproses. Cara kerjanya adalah aplikasi A akan mengirim sebuah pesan ke dalam queue lalu aplikasi B akan mengambilnya, memprosesnya, dan kemudian menghapusnya dari antrean.
+#Amazon Simple Notification Service (Amazon SNS)
+    => Amazon Simple Notification Service (Amazon SNS) juga digunakan untuk mengirimkan pesan ke layanan. Bedanya, ia juga dapat mengirimkan pemberitahuan ke pelanggan.
+
+#AWS Lambda
+    => AWS Lambda adalah layanan yang memungkinkan Anda untuk menjalankan kode tanpa harus membuat atau mengelola server.
+
+#Amazon Elastic Container Service (Amazon ECS)
+    => Amazon Elastic Container Service (Amazon ECS) adalah sistem manajemen container berkinerja tinggi yang dapat memungkinkan Anda untuk menjalankan dan melakukan scaling terhadap containerized application (aplikasi dalam container) di AWS.
+
+#Amazon Elastic Kubernetes Service (Amazon EKS)
+    => Amazon Elastic Kubernetes Service (Amazon EKS) adalah layanan terkelola sepenuhnya yang dapat Anda gunakan untuk menjalankan Kubernetes di AWS.
+
+#Kubernetes
+    =>Kubernetes adalah perangkat lunak open-source (sumber terbuka) yang memungkinkan Anda untuk men-deploy (menerapkan) dan mengelola containerized application (aplikasi dalam container) dalam skala besar.
+
+#AWS Fargate
+    => AWS Fargate adalah platform komputasi serverless untuk Amazon ECS dan Amazon EKS. Saat menggunakan layanan ini, Anda tak perlu menyediakan atau mengelola server karena AWS Fargate yang mengelolanya untuk Anda.
+
+#
