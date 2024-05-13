@@ -4,18 +4,19 @@ const host = "localhost";
 
 const requestListener = (req, res) => {
     res.setHeader("Content-type", "text/html");
-    res.statusCode = 200;
-
     const { method, url } = req;
 
     if (url === "/") {
         if (method === "GET") {
+            res.statusCode = 200;
             res.end("<h1>Ini adalah halaman homepage</h1>");
         } else {
+            res.statusCode = 400;
             res.end(`<h1>Halaman tidak dapat diakses dengan ${method} request</h1>`);
         }
     } else if (url === "/about") {
         if (method === "GET") {
+            res.statusCode = 200;
             res.end("<h1>Ini adalah halaman about</h1>");
         } else if (method === "POST") {
             let data = [];
@@ -25,12 +26,15 @@ const requestListener = (req, res) => {
 
             req.on("end", () => {
                 const { name } = JSON.parse(Buffer.concat(data).toString());
+                res.statusCode = 200;
                 res.end(`<h1>hallo ${name}</h1>`);
             });
         } else {
+            res.statusCode = 400;
             res.end(`<h1>Halaman tidak dapat diakses dengan ${method} request</h1>`);
         }
     } else {
+        res.statusCode = 400;
         res.end("<h1>Halaman Tidak ditemukan</h1>");
     }
 }; // Lalu tulis di terminal curl -X GET http://localhost:5000
