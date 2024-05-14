@@ -2,22 +2,29 @@ const http = require("http"); //Node.js menyediakan core modules http untuk memb
 const port = 5000;
 const host = "localhost";
 
-const requestListener = (req, res) => {
-    res.setHeader("Content-type", "text/html");
+const requestListener = (req, res) => { 
+    res.setHeader("Content-type", "application/json") //response header
+    res.setHeader("Powered-By", "Node.js") //response header
     const { method, url } = req;
 
     if (url === "/") {
         if (method === "GET") {
             res.statusCode = 200;
-            res.end("<h1>Ini adalah halaman homepage</h1>");
+            res.end(JSON.stringify({
+                message: "Ini adalah homepage"
+            }))
         } else {
             res.statusCode = 400;
-            res.end(`<h1>Halaman tidak dapat diakses dengan ${method} request</h1>`);
+            res.end(JSON.stringify({
+                message: `Halaman tidak bisa di akses melalui ${method}`
+            }))
         }
     } else if (url === "/about") {
         if (method === "GET") {
             res.statusCode = 200;
-            res.end("<h1>Ini adalah halaman about</h1>");
+            res.end(JSON.stringify({
+                message: "Ini adalah halaman about"
+            }))
         } else if (method === "POST") {
             let data = [];
             req.on("data", (chunk) => { // mendapatkan chunk (potongan data)
@@ -27,15 +34,21 @@ const requestListener = (req, res) => {
             req.on("end", () => {
                 const { name } = JSON.parse(Buffer.concat(data).toString());
                 res.statusCode = 200;
-                res.end(`<h1>hallo ${name}</h1>`);
+                res.end(JSON.stringify({
+                    message: `Halo ${name}!`
+                }))
             });
         } else {
             res.statusCode = 400;
-            res.end(`<h1>Halaman tidak dapat diakses dengan ${method} request</h1>`);
+            res.end(JSON.stringify({
+                message: `Halaman tidak bisa di akses melalui ${method}`
+            }))
         }
     } else {
         res.statusCode = 400;
-        res.end("<h1>Halaman Tidak ditemukan</h1>");
+        res.end(JSON.stringify({
+            message: `Halaman tidak ditemukan`
+        }))
     }
 }; // Lalu tulis di terminal curl -X GET http://localhost:5000
 
